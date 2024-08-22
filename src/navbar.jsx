@@ -8,6 +8,27 @@ import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function Navbar() {
+  const navlink = [
+    {
+      name: "CONTACT",
+      target: "#contact",
+    },
+    {
+      name: "ABOUT",
+      target: "#about",
+    },
+    {
+      name: "PRICING",
+      target: "#pricing",
+    },
+  ];
+
+  const services = [
+    { name: "SEO" },
+    { name: "DIGITAL MATKETING" },
+    { name: "SOCIAL MEDIA" },
+  ];
+
   return (
     <div>
       <nav className="navbar navbar-expand-md bgnavbar sticky-top">
@@ -44,46 +65,24 @@ export default function Navbar() {
                   Serviecs
                 </a>
                 <ul className="dropdown-menu">
-                  <li>
-                    <Link to="#action" className="dropdown-item " href="#">
-                      Digital Marketion
-                    </Link>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      SEO
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Social Media
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
+                  {services.map((service, idx) => (
+                    <li key={idx}>
+                      <a className="dropdown-item ">{service.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </li>
-              <li className="nav-item ">
-                <Link
-                  to="#fourth"
-                  className="nav-link active btnColor"
-                  aria-current="page"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="#about" className="nav-link btnColor" href="#">
-                  About
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="#pricing" className="nav-link btnColor" href="#">
-                  Pricing
-                </Link>
-              </li>
+              {navlink.map((link, idx) => (
+                <li className="nav-item" key={idx}>
+                  <Link
+                    to={link.target}
+                    className="nav-link active btnColor"
+                    aria-current="page"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
