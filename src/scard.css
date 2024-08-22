@@ -1,0 +1,14 @@
+.card:hover {
+  scale: 1.1;
+  background-color: rgb(87, 19, 151);
+  color: white;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 8px 8px 20px rgb(87, 19, 151);
+
+  transition: 0.5s;
+}
+.box1 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}

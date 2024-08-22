@@ -1,0 +1,21 @@
+.bgintic {
+  background-color: #7a1cac !important;
+  background-image: url("https://zdblogs.zohowebstatic.com/sites/tech-talk/files/2023-06/Firefly%20create%20an%20image%20for%20this%20Discover%20the%20essence%20of%20SEO%20its%20benefits%20for%20small%20businesses%20an%20%281%29%20%281%29.jpg");
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .bgintic {
+    background-size: fill !important;
+    background-position: top center !important;
+    background-attachment: scroll;
+  }
+}
+
+.textCrousel {
+  color: white !important;
+  font-size: clamp(1rem, 5vw, 3rem);
+}

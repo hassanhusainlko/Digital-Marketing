@@ -1,0 +1,21 @@
+.box {
+  width: 100%;
+  height: auto;
+  background-color: rgb(17, 1, 32);
+  overflow-x: hidden;
+}
+.innerBox {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 20px !important;
+}
+
+.text {
+  color: white;
+}
+.form-text {
+  color: white !important;
+  padding: 0 10%;
+}

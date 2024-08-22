@@ -1,0 +1,17 @@
+.imge {
+  border: none !important;
+  font-size: xx-small !important;
+  width: 30% !important;
+  filter: grayscale(100%);
+}
+
+.imge:hover {
+  filter: grayscale(0%);
+  transition: 1s;
+}
+
+.imgBox {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
